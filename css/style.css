@@ -8868,6 +8868,10 @@ textarea.form-control {
   transform: translateY(-50%);
   color: rgba(255, 255, 255, 0.8); }
 
+.goMassas {
+  color: #ee76ad !important;
+}
+
 .sidebar-box {
   margin-bottom: 30px;
   padding: 25px;
