@@ -1305,9 +1305,42 @@ h1, h2, h3, h4, h5,
   line-height: 0;
   left: 10px;
   position: relative;
-  top: 55px;
+  top: 100px;
   color: #c09175;
   font-size: 4em;
+}
+
+.heading-section .subheading {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.heading-section h2 {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  .heading-section h2 {
+    font-size: 28px;
+  }
+}
+
+.heading-section.heading-section-white .subheading {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.heading-section.heading-section-white h2 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.heading-section.heading-section-white p {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .whatsapp-fab-button {
@@ -1331,7 +1364,7 @@ h1, h2, h3, h4, h5,
 }
 
 .btn-nude {
-  color: #212529;
+  color: #212529 !important;
   background-color: #c09175;
   border-color: #c09175;
 }
@@ -1341,13 +1374,13 @@ h1, h2, h3, h4, h5,
 }
 
 .btn-brown {
-  color: #fff;
+  color: #fff !important;
   background-color: #714b42;
   border-color: #714b42;
 }
 
 .site-section {
-  padding: 7rem 0;
+  padding: 4rem 0;
 }
 
 @media (max-width: 991.98px) {
