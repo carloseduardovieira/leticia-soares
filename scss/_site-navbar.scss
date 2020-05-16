@@ -5,7 +5,7 @@
 	position: absolute;
 	top: 0;
 	width: 100%;
-	padding: 1rem;
+	padding: 4rem 1rem;
 	@include media-breakpoint-down(md) {
 		padding-top: 3rem;
 		padding-bottom: 3rem;
@@ -22,8 +22,8 @@
 			color: $white;
 		}
 		@include media-breakpoint-down(md) {
-			float: left;
-			position: relative;
+			margin: auto;
+			// position: relative;
 		}
 	}
 	
@@ -37,7 +37,7 @@
 			padding: 0;
 			margin-bottom: 0;
 			.active {
-				color: $primary!important;
+				color: $brown!important;
 				// display: inline-block;
 				// border-bottom: 2px solid $primary;
 			}
@@ -51,19 +51,20 @@
 					margin-left: 15px;
 					margin-right: 15px;
 					padding: 20px 0px;
-					color: $black!important;
+					color: $nude!important;
 					display: inline-block;
 					text-decoration: none!important;
 					// border-bottom: 2px solid transparent;
 					
 					&:hover {
-						color: $primary;
+						color: $brown;
 						
 					}
 				}
 				&.active {
 					> a {
-						color: $primary!important;
+						color: $brown!important;
+						font-weight: bold;
 					}
 				}
 			}
@@ -88,7 +89,7 @@
 					top: 100%;
 					position: absolute;
 					text-align: left;
-					border-top: 2px solid $primary;
+					border-top: 2px solid $brown;
 					box-shadow: 0 2px 10px -2px rgba(0,0,0,.1);
 					padding: 0px 0;
 					margin-top: 20px;
@@ -124,7 +125,7 @@
 						text-transform: none;
 						letter-spacing: normal;
 						transition: 0s all;
-						color: $black!important;
+						color: $nude!important;
 						&.active {
 							color: $primary!important;
 							background: $gray-100;
@@ -172,7 +173,7 @@
 				
 				&:hover, &:focus, &:active {
 					> a {
-						color: $primary;
+						color: $brown;
 					}
 				}
 				&:hover, &:focus, &:active {
@@ -276,7 +277,7 @@
 			position: relative;
 			color: $gray-900;
 			&:hover {
-				color: $primary;
+				color: $brown;
 			}
 		}
 		li {
@@ -284,12 +285,13 @@
 			display: block;
 			.nav-link {
 				&.active {
-					color: $primary;
+					color: $brown;
 				}
 			}
 			&.active {
 				> a {
-					color: $primary;
+					color: $brown;
+					font-weight: bold;
 				}
 			}
 		}
@@ -440,6 +442,103 @@
 		@include media-breakpoint-down(md) {
 			padding-top: 30px!important;
 			padding-bottom: 30px!important;
+		}
+	}
+}
+
+// SERVICES
+.services{
+	.icon {
+		width: 90px;
+		height: 50px;
+		position: relative;
+		&:before, &:after{
+			position: absolute;
+			left: 0;
+			right: 0;
+			content: '';
+		}
+		&.color-1{
+			background: lighten($brown, 5%);
+			span{
+				color: $brown;
+			}
+			&:before{
+				top: -20px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 45px 20px 45px;
+				border-color: transparent transparent lighten($brown,5%) transparent;
+			}
+			&:after{
+				bottom: -20px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 20px 45px 0 45px;
+				border-color: lighten($brown,5%) transparent transparent transparent;
+			}
+		}
+		&.color-2{
+			background: lighten($nude, 25%);
+			span{
+				color: $nude;
+			}
+			&:before{
+				top: -20px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 45px 20px 45px;
+				border-color: transparent transparent lighten($nude,25%) transparent;
+			}
+			&:after{
+				bottom: -20px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 20px 45px 0 45px;
+				border-color: lighten($nude,25%) transparent transparent transparent;
+			}
+		}
+		&.color-3{
+			background: lighten($brown, 40%);
+			span{
+				color: $brown;
+			}
+			&:before{
+				top: -20px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 45px 20px 45px;
+				border-color: transparent transparent lighten($brown,40%) transparent;
+			}
+			&:after{
+				bottom: -20px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 20px 45px 0 45px;
+				border-color: lighten($brown,40%) transparent transparent transparent;
+			}
+		}		
+	}
+	.media-body{
+		h3{
+			font-size: 20px;
+		}
+	}
+}
+.list-services{
+	margin-top: 40px;
+	padding: 0;
+	li{
+		font-size: 18px;
+		list-style: none;
+		a{
+			color: $black;
 		}
 	}
 }
