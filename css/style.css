@@ -410,6 +410,10 @@ h1, h2, h3, h4, h5,
   padding: 4em 0;
 }
 
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
 .site-footer {
   padding: 2em 0;
   background: #714b42;
